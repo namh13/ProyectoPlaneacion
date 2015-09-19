@@ -15,3 +15,6 @@ C:\Users\usuario1\Documents\Visual Studio 2013\Projects\ProyectoPlaneacion\Proye
 C:\Users\usuario1\Documents\Visual Studio 2013\Projects\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.Fuente.resources
 C:\Users\usuario1\Documents\Visual Studio 2013\Projects\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.Materiales.resources
 C:\Users\usuario1\Documents\Visual Studio 2013\Projects\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.Menu.resources
+C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\bin\Debug\ProyectoPlaneacion.exe.config
+C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.exe
+C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.pdb
