@@ -35,17 +35,15 @@
             this.label3 = new System.Windows.Forms.Label();
             this.cmbFuncionario = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.cmbArea = new System.Windows.Forms.ComboBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.dateInicio = new System.Windows.Forms.DateTimePicker();
             this.dateFinal = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtOtroF = new System.Windows.Forms.TextBox();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.txtOtroA = new System.Windows.Forms.TextBox();
+            this.txtArea = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -124,30 +122,9 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Areas Afectadas";
             // 
-            // cmbArea
-            // 
-            this.cmbArea.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbArea.FormattingEnabled = true;
-            this.cmbArea.Items.AddRange(new object[] {
-            "Produccion",
-            "Recursos Humano",
-            "Contabilidad",
-            "Ventas",
-            "Compras",
-            "Mercadeo",
-            "Atenion al Cliente",
-            "Administrativa",
-            "Operacional",
-            "IT",
-            "Otra"});
-            this.cmbArea.Location = new System.Drawing.Point(172, 122);
-            this.cmbArea.Name = "cmbArea";
-            this.cmbArea.Size = new System.Drawing.Size(228, 21);
-            this.cmbArea.TabIndex = 8;
-            // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(172, 160);
+            this.txtDescripcion.Location = new System.Drawing.Point(172, 196);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(440, 20);
             this.txtDescripcion.TabIndex = 9;
@@ -156,7 +133,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(10, 163);
+            this.label5.Location = new System.Drawing.Point(10, 199);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(149, 13);
             this.label5.TabIndex = 10;
@@ -166,7 +143,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(10, 199);
+            this.label6.Location = new System.Drawing.Point(10, 235);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(95, 13);
             this.label6.TabIndex = 11;
@@ -176,7 +153,7 @@
             // 
             this.dateInicio.CustomFormat = "";
             this.dateInicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateInicio.Location = new System.Drawing.Point(172, 193);
+            this.dateInicio.Location = new System.Drawing.Point(172, 229);
             this.dateInicio.Name = "dateInicio";
             this.dateInicio.Size = new System.Drawing.Size(200, 20);
             this.dateInicio.TabIndex = 12;
@@ -185,7 +162,7 @@
             // 
             this.dateFinal.CustomFormat = "";
             this.dateFinal.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateFinal.Location = new System.Drawing.Point(172, 229);
+            this.dateFinal.Location = new System.Drawing.Point(172, 265);
             this.dateFinal.Name = "dateFinal";
             this.dateFinal.Size = new System.Drawing.Size(200, 20);
             this.dateFinal.TabIndex = 14;
@@ -194,24 +171,16 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(10, 235);
+            this.label7.Location = new System.Drawing.Point(10, 271);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(131, 13);
             this.label7.TabIndex = 13;
             this.label7.Text = "Fecha de Finalizacion";
             // 
-            // txtOtroF
-            // 
-            this.txtOtroF.Enabled = false;
-            this.txtOtroF.Location = new System.Drawing.Point(408, 86);
-            this.txtOtroF.Name = "txtOtroF";
-            this.txtOtroF.Size = new System.Drawing.Size(204, 20);
-            this.txtOtroF.TabIndex = 16;
-            // 
             // btnAceptar
             // 
             this.btnAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptar.Location = new System.Drawing.Point(434, 227);
+            this.btnAceptar.Location = new System.Drawing.Point(434, 263);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(75, 29);
             this.btnAceptar.TabIndex = 28;
@@ -222,37 +191,36 @@
             // btnCancelar
             // 
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(523, 227);
+            this.btnCancelar.Location = new System.Drawing.Point(523, 263);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 29);
             this.btnCancelar.TabIndex = 29;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             // 
-            // txtOtroA
+            // txtArea
             // 
-            this.txtOtroA.Enabled = false;
-            this.txtOtroA.Location = new System.Drawing.Point(408, 122);
-            this.txtOtroA.Name = "txtOtroA";
-            this.txtOtroA.Size = new System.Drawing.Size(204, 20);
-            this.txtOtroA.TabIndex = 30;
+            this.txtArea.Enabled = false;
+            this.txtArea.Location = new System.Drawing.Point(172, 125);
+            this.txtArea.Multiline = true;
+            this.txtArea.Name = "txtArea";
+            this.txtArea.Size = new System.Drawing.Size(228, 54);
+            this.txtArea.TabIndex = 30;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(633, 267);
-            this.Controls.Add(this.txtOtroA);
+            this.ClientSize = new System.Drawing.Size(633, 306);
+            this.Controls.Add(this.txtArea);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
-            this.Controls.Add(this.txtOtroF);
             this.Controls.Add(this.dateFinal);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.dateInicio);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtDescripcion);
-            this.Controls.Add(this.cmbArea);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.cmbFuncionario);
             this.Controls.Add(this.label3);
@@ -278,17 +246,15 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cmbFuncionario;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox cmbArea;
         private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DateTimePicker dateInicio;
         private System.Windows.Forms.DateTimePicker dateFinal;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtOtroF;
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.TextBox txtOtroA;
+        private System.Windows.Forms.TextBox txtArea;
     }
 }
 
