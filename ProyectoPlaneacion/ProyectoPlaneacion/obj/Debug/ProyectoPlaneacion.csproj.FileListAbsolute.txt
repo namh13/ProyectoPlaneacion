@@ -1,0 +1,17 @@
+c:\users\usuario1\documents\visual studio 2013\Projects\ProyectoPlaneacion\ProyectoPlaneacion\bin\Debug\ProyectoPlaneacion.exe.config
+c:\users\usuario1\documents\visual studio 2013\Projects\ProyectoPlaneacion\ProyectoPlaneacion\bin\Debug\ProyectoPlaneacion.exe
+c:\users\usuario1\documents\visual studio 2013\Projects\ProyectoPlaneacion\ProyectoPlaneacion\bin\Debug\ProyectoPlaneacion.pdb
+c:\users\usuario1\documents\visual studio 2013\Projects\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.csprojResolveAssemblyReference.cache
+c:\users\usuario1\documents\visual studio 2013\Projects\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.Form1.resources
+c:\users\usuario1\documents\visual studio 2013\Projects\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.Properties.Resources.resources
+c:\users\usuario1\documents\visual studio 2013\Projects\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.csproj.GenerateResource.Cache
+c:\users\usuario1\documents\visual studio 2013\Projects\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.exe
+c:\users\usuario1\documents\visual studio 2013\Projects\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.pdb
+C:\Users\usuario1\Documents\Visual Studio 2013\Projects\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.frmBeneficios.resources
+C:\Users\usuario1\Documents\Visual Studio 2013\Projects\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.frmFuente.resources
+C:\Users\usuario1\Documents\Visual Studio 2013\Projects\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.Portafolio.resources
+C:\Users\usuario1\Documents\Visual Studio 2013\Projects\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.Capacitaciones.resources
+C:\Users\usuario1\Documents\Visual Studio 2013\Projects\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.CapacitacionPersona.resources
+C:\Users\usuario1\Documents\Visual Studio 2013\Projects\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.Fuente.resources
+C:\Users\usuario1\Documents\Visual Studio 2013\Projects\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.Materiales.resources
+C:\Users\usuario1\Documents\Visual Studio 2013\Projects\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.Menu.resources
