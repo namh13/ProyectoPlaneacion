@@ -65,9 +65,11 @@ namespace ProyectoPlaneacion
         {
             string sql = "";
 
-            sql = @"insert into Proyecto(denominacion,orden,area_solicitante,area_afectada,descripcion,fecha_inicio,fecha_final) 
-                    values('{0}',{1}'{2}','{3}','{4}','{5}','{6}')";
-            sql = string.Format(sql, txtDenominacion.Text, txtOrden.Text, cmbFuncionario.SelectedItem.ToString(), cmbArea.SelectedItem.ToString(), txtDescripcion.Text, dateInicio.Value.Date.ToString("dd/MM/yyyy"), dateFinal.Value.Date.ToString("dd/MM/yyyy"));
+
+
+            sql = @"insert into Proyecto(denominacion,area_solicitante,area_afectada,descripcion,fecha_inicio,fecha_final) 
+                    values('{0}','{1}','{2}','{3}','{4}','{5}')";
+            sql = string.Format(sql, txtDenominacion.Text, cmbFuncionario.SelectedItem.ToString(), cmbArea.SelectedItem.ToString(), txtDescripcion.Text, (dateInicio.Value.ToString("yyyy-MM-dd")), dateFinal.Value.ToString("yyyy-MM-dd"));
 
             if (auxiliar.c.SqlExec(sql))
             {

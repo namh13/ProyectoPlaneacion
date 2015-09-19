@@ -174,6 +174,8 @@
             // 
             // dateInicio
             // 
+            this.dateInicio.CustomFormat = "";
+            this.dateInicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateInicio.Location = new System.Drawing.Point(172, 193);
             this.dateInicio.Name = "dateInicio";
             this.dateInicio.Size = new System.Drawing.Size(200, 20);
@@ -181,6 +183,8 @@
             // 
             // dateFinal
             // 
+            this.dateFinal.CustomFormat = "";
+            this.dateFinal.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateFinal.Location = new System.Drawing.Point(172, 229);
             this.dateFinal.Name = "dateFinal";
             this.dateFinal.Size = new System.Drawing.Size(200, 20);
