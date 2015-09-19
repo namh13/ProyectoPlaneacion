@@ -18,3 +18,17 @@ C:\Users\usuario1\Documents\Visual Studio 2013\Projects\ProyectoPlaneacion\Proye
 C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\bin\Debug\ProyectoPlaneacion.exe.config
 C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.exe
 C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.pdb
+C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\bin\Debug\ProyectoPlaneacion.exe
+C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\bin\Debug\ProyectoPlaneacion.pdb
+C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.csprojResolveAssemblyReference.cache
+C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.Area.resources
+C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.Capacitaciones.resources
+C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.CapacitacionPersona.resources
+C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.Form1.resources
+C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.frmBeneficios.resources
+C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.frmFuente.resources
+C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.Fuente.resources
+C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.Materiales.resources
+C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.Portafolio.resources
+C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.Properties.Resources.resources
+C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.csproj.GenerateResource.Cache

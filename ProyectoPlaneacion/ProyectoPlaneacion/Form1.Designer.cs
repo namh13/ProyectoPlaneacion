@@ -33,7 +33,7 @@
             this.txtOrden = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.cmbFuncionario = new System.Windows.Forms.ComboBox();
+            this.cmbArea = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -44,6 +44,7 @@
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.txtArea = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -91,11 +92,11 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Area Solicitante";
             // 
-            // cmbFuncionario
+            // cmbArea
             // 
-            this.cmbFuncionario.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbFuncionario.FormattingEnabled = true;
-            this.cmbFuncionario.Items.AddRange(new object[] {
+            this.cmbArea.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbArea.FormattingEnabled = true;
+            this.cmbArea.Items.AddRange(new object[] {
             "Produccion",
             "Recursos Humano",
             "Contabilidad",
@@ -107,10 +108,10 @@
             "Operacional",
             "IT",
             "Otra"});
-            this.cmbFuncionario.Location = new System.Drawing.Point(172, 86);
-            this.cmbFuncionario.Name = "cmbFuncionario";
-            this.cmbFuncionario.Size = new System.Drawing.Size(228, 21);
-            this.cmbFuncionario.TabIndex = 5;
+            this.cmbArea.Location = new System.Drawing.Point(172, 86);
+            this.cmbArea.Name = "cmbArea";
+            this.cmbArea.Size = new System.Drawing.Size(228, 21);
+            this.cmbArea.TabIndex = 5;
             // 
             // label4
             // 
@@ -195,24 +196,36 @@
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 29);
             this.btnCancelar.TabIndex = 29;
-            this.btnCancelar.Text = "Salir";
+            this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // txtArea
             // 
-            this.txtArea.Enabled = false;
             this.txtArea.Location = new System.Drawing.Point(172, 125);
             this.txtArea.Multiline = true;
             this.txtArea.Name = "txtArea";
             this.txtArea.Size = new System.Drawing.Size(228, 54);
             this.txtArea.TabIndex = 30;
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(406, 84);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(26, 23);
+            this.button1.TabIndex = 31;
+            this.button1.Text = "+";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(633, 306);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtArea);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
@@ -223,7 +236,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.cmbFuncionario);
+            this.Controls.Add(this.cmbArea);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtOrden);
             this.Controls.Add(this.label2);
@@ -245,7 +258,7 @@
         private System.Windows.Forms.TextBox txtOrden;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox cmbFuncionario;
+        private System.Windows.Forms.ComboBox cmbArea;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.Label label5;
@@ -256,6 +269,7 @@
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.TextBox txtArea;
+        private System.Windows.Forms.Button button1;
     }
 }
 

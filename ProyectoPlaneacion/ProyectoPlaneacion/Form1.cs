@@ -40,42 +40,37 @@ namespace ProyectoPlaneacion
         private void Form1_Load(object sender, EventArgs e)
         {
             Conectar();
+            LlenarArea();
         }
 
        
 
-        private void ContadorAreas()
+        public void LlenarArea()
         {
-            string area = cmbArea.SelectedItem.ToString();
-            if (area == "Administracion" || area == "Ventas")
+            string ls = "";
+            DataTable dt = null;
+
+            ls = @"select *from Area";
+            if(auxiliar.c.SQLSelectDataTable(ls,ref dt))
             {
-                contadorAreas += 3;
-            }
-            if (area == "Otra")
-            {
-                contadorAreas += 1;
-            }
-            if (area != "Administracion" && area != "Ventas" && area != "Otra")
-            {
-                contadorAreas += 2;
-            }
+                cmbArea.DataSource = dt;
+                cmbArea.ValueMember = "id_area";
+                cmbArea.DisplayMember = "descripcion";
+            } 
         }
 
         private void CrearProyecto()
         {
             string sql = "";
 
-
-
-            sql = @"insert into Proyecto(denominacion,area_solicitante,area_afectada,descripcion,fecha_inicio,fecha_final) 
-                    values('{0}','{1}','{2}','{3}','{4}','{5}')";
-            sql = string.Format(sql, txtDenominacion.Text, cmbFuncionario.SelectedItem.ToString(), txtArea.Text, txtDescripcion.Text, dateInicio.Value.ToString("yyyy-MM-dd"), dateFinal.Value.ToString("yyyy-MM-dd"));
+            sql = @"insert into Proyecto(denominacion,id_area,area_afectada,descripcion,fecha_inicio,fecha_final) 
+                    values('{0}',{1},'{2}','{3}','{4}','{5}')";
+            sql = string.Format(sql, txtDenominacion.Text, cmbArea.SelectedIndex + 1, txtArea.Text, txtDescripcion.Text, dateInicio.Value.ToString("yyyy-MM-dd"), dateFinal.Value.ToString("yyyy-MM-dd"));
 
             if (auxiliar.c.SqlExec(sql))
             {
-                MessageBox.Show("Proyecto insertado correctamente");
-                //Limpiar();
-
+                MessageBox.Show("Proyecto creado correctamente");
+                Limpiar();
             }
             else
             {
@@ -88,9 +83,25 @@ namespace ProyectoPlaneacion
             CrearProyecto();
         }
 
+        private void Limpiar()
+        {
+            txtDenominacion.Text = "";
+            cmbArea.SelectedIndex = 0;
+            txtArea.Text = "";
+            txtDescripcion.Text = "";
+            dateInicio.Value = DateTime.Now;
+            dateFinal.Value = DateTime.Now;
+        }
         private void btnCancelar_Click(object sender, EventArgs e)
         {
+            Limpiar();
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Area frm = new Area();
+            frm.ShowDialog(this);
+            LlenarArea();
         }
 
     }
