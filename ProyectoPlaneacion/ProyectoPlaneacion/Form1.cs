@@ -45,7 +45,7 @@ namespace ProyectoPlaneacion
 
        
 
-        public void LlenarArea()
+        private void LlenarArea()
         {
             string ls = "";
             DataTable dt = null;
@@ -78,6 +78,20 @@ namespace ProyectoPlaneacion
             }
         }
 
+        private void CalcularFecha()
+        {
+            int dias = (dateFinal.Value - dateInicio.Value).Days;
+            if (dias < 30)
+            {
+                MessageBox.Show(dias.ToString() + " Dias");
+            }
+            else
+            {
+                double meses = dias / 30;
+                MessageBox.Show(meses.ToString() + " Meses");
+            }
+        }
+
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             CrearProyecto();
@@ -94,6 +108,7 @@ namespace ProyectoPlaneacion
         }
         private void btnCancelar_Click(object sender, EventArgs e)
         {
+            CalcularFecha();
             Limpiar();
         }
 
