@@ -74,17 +74,41 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArea.Designer.cs">
+      <DependentUpon>frmArea.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBeneficios.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmBeneficios.Designer.cs">
       <DependentUpon>frmBeneficios.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDetalleProyecto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDetalleProyecto.Designer.cs">
+      <DependentUpon>frmDetalleProyecto.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmFuente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmFuente.Designer.cs">
       <DependentUpon>frmFuente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFuenteMas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFuenteMas.Designer.cs">
+      <DependentUpon>frmFuenteMas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Fuente.cs">
       <SubType>Form</SubType>
@@ -100,6 +124,21 @@
     <Compile Include="Materiales.Designer.cs">
       <DependentUpon>Materiales.cs</DependentUpon>
     </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipal.Designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Portafolio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,18 +162,49 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmArea.resx">
+      <DependentUpon>frmArea.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmBeneficios.resx">
       <DependentUpon>frmBeneficios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDetalleProyecto.resx">
+      <DependentUpon>frmDetalleProyecto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmFuente.resx">
       <DependentUpon>frmFuente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmFuenteMas.resx">
+      <DependentUpon>frmFuenteMas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Fuente.resx">
       <DependentUpon>Fuente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx" />
     <EmbeddedResource Include="Materiales.resx">
       <DependentUpon>Materiales.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\ProyectoPlaneacion.Area.resources" />
+    <EmbeddedResource Include="obj\Debug\ProyectoPlaneacion.Capacitaciones.resources" />
+    <EmbeddedResource Include="obj\Debug\ProyectoPlaneacion.CapacitacionPersona.resources" />
+    <EmbeddedResource Include="obj\Debug\ProyectoPlaneacion.Factibilidad.resources" />
+    <EmbeddedResource Include="obj\Debug\ProyectoPlaneacion.Form1.resources" />
+    <EmbeddedResource Include="obj\Debug\ProyectoPlaneacion.frmBeneficios.resources" />
+    <EmbeddedResource Include="obj\Debug\ProyectoPlaneacion.frmFuente.resources" />
+    <EmbeddedResource Include="obj\Debug\ProyectoPlaneacion.Fuente.resources" />
+    <EmbeddedResource Include="obj\Debug\ProyectoPlaneacion.Materiales.resources" />
+    <EmbeddedResource Include="obj\Debug\ProyectoPlaneacion.Menu.resources" />
+    <EmbeddedResource Include="obj\Debug\ProyectoPlaneacion.Portafolio.resources" />
+    <EmbeddedResource Include="obj\Debug\ProyectoPlaneacion.Properties.Resources.resources" />
     <EmbeddedResource Include="Portafolio.resx">
       <DependentUpon>Portafolio.cs</DependentUpon>
     </EmbeddedResource>
@@ -148,6 +218,13 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="bin\Debug\ProyectoPlaneacion.exe.config" />
+    <None Include="bin\Debug\ProyectoPlaneacion.vshost.exe.config" />
+    <None Include="bin\Debug\ProyectoPlaneacion.vshost.exe.manifest" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\ProyectoPlaneacion.csproj.GenerateResource.Cache" />
+    <None Include="obj\Debug\ProyectoPlaneacion.csprojResolveAssemblyReference.cache" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -163,6 +240,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\ProyectoPlaneacion.exe" />
+    <Content Include="bin\Debug\ProyectoPlaneacion.pdb" />
+    <Content Include="bin\Debug\ProyectoPlaneacion.vshost.exe" />
+    <Content Include="obj\Debug\ProyectoPlaneacion.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\ProyectoPlaneacion.exe" />
+    <Content Include="obj\Debug\ProyectoPlaneacion.pdb" />
+    <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

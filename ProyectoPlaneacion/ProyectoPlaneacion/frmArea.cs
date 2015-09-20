@@ -11,37 +11,22 @@ using System.Data.SqlClient;
 
 namespace ProyectoPlaneacion
 {
-    public partial class frmFuente : Form
+    public partial class frmArea : Form
     {
-        public string p_fuente = "";
-        public int p_contador = 0;
-        
         private SqlConnection conexionBD;
 
-        public frmFuente(SqlConnection conexionBD)
+        public frmArea(SqlConnection conexionBD)
         {
             InitializeComponent();
             this.conexionBD = conexionBD;
         }
-
-        private void frmFuente_Load(object sender, EventArgs e)
-        {
-            CargarFuentes();
-        }
-
-        private void btnAceptar_Click(object sender, EventArgs e)
-        {
-            frmFuenteMas frm = new frmFuenteMas(conexionBD);
-            frm.ShowDialog(this);
-            CargarFuentes();
-        }
-        private void CargarFuentes()
+        private void CargarArea()
         {
             try
             {
                 DataTable dt = new DataTable();
                 //conexionBD.Open();
-                string ls = @"select *from Fuente";
+                string ls = @"select *from Area";
                 SqlCommand cargar = new SqlCommand(ls, conexionBD);
                 SqlDataAdapter llenar = new SqlDataAdapter(cargar);
                 llenar.Fill(dt);
@@ -49,52 +34,56 @@ namespace ProyectoPlaneacion
                 dataGridView1.DataSource = dt;
                 //conexionBD.Close();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
 
             }
-           
+
+        }
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            Area frm = new Area(conexionBD);
+            frm.ShowDialog(this);
+            CargarArea();
+        }
+        private void EliminarRegistro()
+        {
+            try
+            {
+                string ls = "";
+                ls = @"delete from Area where id_area = @area";
+                string fila = dataGridView1.CurrentRow.Cells["n_id"].Value.ToString();
+
+                SqlCommand borrar = new SqlCommand(ls, conexionBD);
+                borrar.Parameters.AddWithValue("@area", fila);
+                borrar.ExecuteNonQuery();
+                //dataGridView1.Rows.Remove(dataGridView1.CurrentRow);
+                CargarArea();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+
+        }
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            EliminarRegistro();
         }
 
         private void dataGridView1_DoubleClick(object sender, EventArgs e)
         {
-            string fuente = "";
+            string area = "";
 
             if (dataGridView1.RowCount > 0)
             {
-                fuente = dataGridView1.CurrentRow.Cells["n_id"].Value.ToString();
+                area = dataGridView1.CurrentRow.Cells["n_id"].Value.ToString();
 
-                frmFuenteMas frm = new frmFuenteMas(conexionBD);
-                frm.fuente = fuente;
+                Area frm = new Area(conexionBD);
+                frm.area = area;
                 frm.ShowDialog(this);
-                CargarFuentes();
+                CargarArea();
             }
-        }
-
-        private void EliminarRegistro()
-        {
-            try 
-            {
-                string ls = "";
-                ls = @"delete from Fuente where idFuente = @Fuente";
-                string fila = dataGridView1.CurrentRow.Cells["n_id"].Value.ToString();
-
-                SqlCommand borrar = new SqlCommand(ls, conexionBD);
-                borrar.Parameters.AddWithValue("@Fuente", fila);
-                borrar.ExecuteNonQuery();
-                //dataGridView1.Rows.Remove(dataGridView1.CurrentRow);
-                CargarFuentes();
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-           
-        }
-
-        private void btnEliminar_Click(object sender, EventArgs e)
-        {
-            EliminarRegistro();
         }
     }
 }

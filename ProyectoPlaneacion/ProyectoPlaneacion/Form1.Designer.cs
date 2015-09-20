@@ -96,18 +96,6 @@
             // 
             this.cmbArea.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbArea.FormattingEnabled = true;
-            this.cmbArea.Items.AddRange(new object[] {
-            "Produccion",
-            "Recursos Humano",
-            "Contabilidad",
-            "Ventas",
-            "Compras",
-            "Mercadeo",
-            "Atenion al Cliente",
-            "Administrativa",
-            "Operacional",
-            "IT",
-            "Otra"});
             this.cmbArea.Location = new System.Drawing.Point(172, 86);
             this.cmbArea.Name = "cmbArea";
             this.cmbArea.Size = new System.Drawing.Size(228, 21);
@@ -198,7 +186,6 @@
             this.btnCancelar.TabIndex = 29;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // txtArea
             // 

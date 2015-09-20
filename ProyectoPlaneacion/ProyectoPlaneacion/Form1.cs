@@ -13,11 +13,6 @@ namespace ProyectoPlaneacion
 {
     public partial class Form1 : Form
     {
-        int contadorF = 0;
-        int contadorR = 0;
-        int contadorB = 0;
-        int contadorFuncionario = 0;
-        int contadorAreas = 0;
 
         private SqlConnection conexionBD;
 
@@ -48,42 +43,29 @@ namespace ProyectoPlaneacion
         private void Form1_Load(object sender, EventArgs e)
         {
             Conectar();
+            LlenarArea();
         }
 
-       
-
-        private void ContadorAreas()
-        {
-            string area = "TEST";
-            if (area == "Administracion" || area == "Ventas")
-            {
-                contadorAreas += 3;
-            }
-            if (area == "Otra")
-            {
-                contadorAreas += 1;
-            }
-            if (area != "Administracion" && area != "Ventas" && area != "Otra")
-            {
-                contadorAreas += 2;
-            }
-        }
 
         private void CrearProyecto()
         {
             string sql = "";
 
+            int duracion = 0;
+            int dias = (dateFinal.Value - dateInicio.Value).Days;
+            if (dias > 30)
+            {duracion = dias / 30;}
+            else
+            {duracion = dias;}
 
-
-            sql = @"insert into Proyecto(denominacion,area_solicitante,area_afectada,descripcion,fecha_inicio,fecha_final) 
-                    values('{0}','{1}','{2}','{3}','{4}','{5}')";
-            sql = string.Format(sql, txtDenominacion.Text, cmbFuncionario.SelectedItem.ToString(), txtArea.Text, txtDescripcion.Text, dateInicio.Value.ToString("yyyy-MM-dd"), dateFinal.Value.ToString("yyyy-MM-dd"));
+            sql = @"insert into Proyecto(denominacion,id_area,area_afectada,descripcion,fecha_inicio,fecha_final,duracion) 
+                    values('{0}',{1},'{2}','{3}','{4}','{5}',{6})";
+            sql = string.Format(sql, txtDenominacion.Text, cmbArea.SelectedIndex + 1, txtArea.Text, txtDescripcion.Text, dateInicio.Value.ToString("yyyy-MM-dd"), dateFinal.Value.ToString("yyyy-MM-dd"),duracion);
 
             if (auxiliar.c.SqlExec(sql))
             {
                 MessageBox.Show("Proyecto insertado correctamente");
                 //Limpiar();
-
             }
             else
             {
@@ -94,6 +76,27 @@ namespace ProyectoPlaneacion
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             CrearProyecto();
+        }
+
+        private void LlenarArea()
+        {
+            string ls = "";
+            DataTable dt = null;
+
+            ls = @"select *from Area";
+
+            if (auxiliar.c.SQLSelectDataTable(ls, ref dt))
+            {
+                cmbArea.DataSource = dt;
+                cmbArea.ValueMember = "id_area";
+                cmbArea.DisplayMember = "descripcion";
+            }
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Area frm = new Area(conexionBD);
+            frm.ShowDialog(this);
+            LlenarArea();
         }
 
     }

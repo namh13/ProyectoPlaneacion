@@ -34,6 +34,8 @@
             this.proyectosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.crearProyectoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.detalleProyectosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fuenteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.areaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,6 +49,7 @@
             this.menuStrip1.Size = new System.Drawing.Size(617, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // archivoToolStripMenuItem
             // 
@@ -81,10 +84,27 @@
             // 
             // detalleProyectosToolStripMenuItem
             // 
+            this.detalleProyectosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fuenteToolStripMenuItem,
+            this.areaToolStripMenuItem});
             this.detalleProyectosToolStripMenuItem.Name = "detalleProyectosToolStripMenuItem";
             this.detalleProyectosToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.detalleProyectosToolStripMenuItem.Text = "Detalle Proyectos";
             this.detalleProyectosToolStripMenuItem.Click += new System.EventHandler(this.detalleProyectosToolStripMenuItem_Click);
+            // 
+            // fuenteToolStripMenuItem
+            // 
+            this.fuenteToolStripMenuItem.Name = "fuenteToolStripMenuItem";
+            this.fuenteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.fuenteToolStripMenuItem.Text = "Fuente";
+            this.fuenteToolStripMenuItem.Click += new System.EventHandler(this.fuenteToolStripMenuItem_Click);
+            // 
+            // areaToolStripMenuItem
+            // 
+            this.areaToolStripMenuItem.Name = "areaToolStripMenuItem";
+            this.areaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.areaToolStripMenuItem.Text = "Area";
+            this.areaToolStripMenuItem.Click += new System.EventHandler(this.areaToolStripMenuItem_Click);
             // 
             // MenuPrincipal
             // 
@@ -113,5 +133,7 @@
         private System.Windows.Forms.ToolStripMenuItem proyectosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem crearProyectoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem detalleProyectosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fuenteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem areaToolStripMenuItem;
     }
 }

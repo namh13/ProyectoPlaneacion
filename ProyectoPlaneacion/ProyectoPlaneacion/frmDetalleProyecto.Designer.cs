@@ -29,32 +29,32 @@
         private void InitializeComponent()
         {
             this.LblProyecto = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbProyecto = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Beneficio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Relevancia = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.Total = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LblDuracion = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtDuracion = new System.Windows.Forms.TextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.dataGridRecursos = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Fuente = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dataGridViewComboBoxColumn2 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewComboBoxColumn1 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridRecursos = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Fuente = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.dataGridViewComboBoxColumn2 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridRecursos)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridRecursos)).BeginInit();
             this.SuspendLayout();
             // 
             // LblProyecto
@@ -63,19 +63,20 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.LblProyecto.AutoSize = true;
             this.LblProyecto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblProyecto.Location = new System.Drawing.Point(35, 93);
+            this.LblProyecto.Location = new System.Drawing.Point(26, 46);
             this.LblProyecto.Name = "LblProyecto";
             this.LblProyecto.Size = new System.Drawing.Size(64, 17);
             this.LblProyecto.TabIndex = 15;
             this.LblProyecto.Text = "Proyecto";
             // 
-            // comboBox1
+            // cmbProyecto
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(105, 92);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(295, 21);
-            this.comboBox1.TabIndex = 16;
+            this.cmbProyecto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbProyecto.FormattingEnabled = true;
+            this.cmbProyecto.Location = new System.Drawing.Point(96, 45);
+            this.cmbProyecto.Name = "cmbProyecto";
+            this.cmbProyecto.Size = new System.Drawing.Size(295, 21);
+            this.cmbProyecto.TabIndex = 16;
             // 
             // dataGridView1
             // 
@@ -112,18 +113,19 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.LblDuracion.AutoSize = true;
             this.LblDuracion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblDuracion.Location = new System.Drawing.Point(34, 123);
+            this.LblDuracion.Location = new System.Drawing.Point(25, 76);
             this.LblDuracion.Name = "LblDuracion";
             this.LblDuracion.Size = new System.Drawing.Size(65, 17);
             this.LblDuracion.TabIndex = 19;
             this.LblDuracion.Text = "Duracion";
             // 
-            // textBox1
+            // txtDuracion
             // 
-            this.textBox1.Location = new System.Drawing.Point(105, 123);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(128, 20);
-            this.textBox1.TabIndex = 20;
+            this.txtDuracion.Enabled = false;
+            this.txtDuracion.Location = new System.Drawing.Point(96, 76);
+            this.txtDuracion.Name = "txtDuracion";
+            this.txtDuracion.Size = new System.Drawing.Size(128, 20);
+            this.txtDuracion.TabIndex = 20;
             // 
             // tabControl1
             // 
@@ -131,7 +133,7 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(34, 158);
+            this.tabControl1.Location = new System.Drawing.Point(25, 111);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(562, 266);
@@ -158,6 +160,36 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Recursos / Fuentes";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // dataGridRecursos
+            // 
+            this.dataGridRecursos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridRecursos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn3,
+            this.Fuente,
+            this.dataGridViewComboBoxColumn2});
+            this.dataGridRecursos.Location = new System.Drawing.Point(24, 40);
+            this.dataGridRecursos.Name = "dataGridRecursos";
+            this.dataGridRecursos.Size = new System.Drawing.Size(485, 150);
+            this.dataGridRecursos.TabIndex = 27;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.HeaderText = "Recurso";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 200;
+            // 
+            // Fuente
+            // 
+            this.Fuente.HeaderText = "Fuente";
+            this.Fuente.Name = "Fuente";
+            this.Fuente.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Fuente.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // dataGridViewComboBoxColumn2
+            // 
+            this.dataGridViewComboBoxColumn2.HeaderText = "Relevancia";
+            this.dataGridViewComboBoxColumn2.Name = "dataGridViewComboBoxColumn2";
             // 
             // tabPage3
             // 
@@ -199,45 +231,15 @@
             this.dataGridViewTextBoxColumn2.HeaderText = "Total";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
-            // dataGridRecursos
-            // 
-            this.dataGridRecursos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridRecursos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn3,
-            this.Fuente,
-            this.dataGridViewComboBoxColumn2});
-            this.dataGridRecursos.Location = new System.Drawing.Point(24, 40);
-            this.dataGridRecursos.Name = "dataGridRecursos";
-            this.dataGridRecursos.Size = new System.Drawing.Size(485, 150);
-            this.dataGridRecursos.TabIndex = 27;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "Recurso";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 200;
-            // 
-            // Fuente
-            // 
-            this.Fuente.HeaderText = "Fuente";
-            this.Fuente.Name = "Fuente";
-            this.Fuente.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Fuente.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // dataGridViewComboBoxColumn2
-            // 
-            this.dataGridViewComboBoxColumn2.HeaderText = "Relevancia";
-            this.dataGridViewComboBoxColumn2.Name = "dataGridViewComboBoxColumn2";
-            // 
             // frmDetalleProyecto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(617, 466);
             this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtDuracion);
             this.Controls.Add(this.LblDuracion);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbProyecto);
             this.Controls.Add(this.LblProyecto);
             this.Name = "frmDetalleProyecto";
             this.Text = "frmDetalleProyecto";
@@ -246,9 +248,9 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridRecursos)).EndInit();
             this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridRecursos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -257,10 +259,10 @@
         #endregion
 
         internal System.Windows.Forms.Label LblProyecto;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbProyecto;
         private System.Windows.Forms.DataGridView dataGridView1;
         internal System.Windows.Forms.Label LblDuracion;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtDuracion;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;

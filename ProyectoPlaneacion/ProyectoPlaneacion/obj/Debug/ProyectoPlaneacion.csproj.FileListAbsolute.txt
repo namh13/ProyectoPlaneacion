@@ -23,7 +23,6 @@ C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion
 C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.CapacitacionPersona.resources
 C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.Form1.resources
 C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.frmBeneficios.resources
-C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.frmDetalleProyecto.resources
 C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.frmFuente.resources
 C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.Fuente.resources
 C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.Materiales.resources
@@ -32,5 +31,12 @@ C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion
 C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.csproj.GenerateResource.Cache
 C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\bin\Debug\ProyectoPlaneacion.exe
 C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\bin\Debug\ProyectoPlaneacion.pdb
+C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.Area.resources
+C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.Factibilidad.resources
+C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.frmDetalleProyecto.resources
 C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.frmLogin.resources
+C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.Login.resources
+C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.Menu.resources
 C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.MenuPrincipal.resources
+C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.frmFuenteMas.resources
+C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.frmArea.resources

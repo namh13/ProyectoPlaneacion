@@ -11,42 +11,40 @@ using System.Data.SqlClient;
 
 namespace ProyectoPlaneacion
 {
-    public partial class Area : Form
+    public partial class frmFuenteMas : Form
     {
         private SqlConnection conexionBD;
-        public string area = "";
+        public string fuente = "";
 
-        public Area(SqlConnection conexionBD)
+        public frmFuenteMas(SqlConnection conexionBD)
         {
             InitializeComponent();
             this.conexionBD = conexionBD;
         }
 
-        
         private void Actualizar()
         {
             try
             {
                 //conexionBD.Open();
                 string ls_Sql = "";
-                ls_Sql = @"update Area set descripcion = @area where id_area = @id ";
+                ls_Sql = @"update Fuente set Fuente = @fuente where idFuente = @id ";
 
                 SqlCommand actualizar = new SqlCommand(ls_Sql, conexionBD);
-                actualizar.Parameters.AddWithValue("@id", area);
-                actualizar.Parameters.AddWithValue("@area", txtArea.Text);
+                actualizar.Parameters.AddWithValue("@id", fuente);
+                actualizar.Parameters.AddWithValue("@fuente", txtFuente.Text);
                 int fila = actualizar.ExecuteNonQuery();
                 if (fila > 0)
                 {
-                    MessageBox.Show("Se actualizo correctamente El Area");
-                    txtArea.Text = "";
+                    MessageBox.Show("Se actualizo correctamente la Fuente");
                 }
                 // conexionBD.Close();
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 MessageBox.Show(ex.ToString());
             }
-
+            
 
         }
         private void Insertar()
@@ -55,40 +53,40 @@ namespace ProyectoPlaneacion
             {
                 //conexionBD.Open();
                 string ls = "";
-                ls = @"insert into Area(descripcion) values(@area)";
+                ls = @"insert into Fuente(Fuente) values(@fuente)";
 
                 SqlCommand insertar = new SqlCommand(ls, conexionBD);
-                insertar.Parameters.AddWithValue("@area", txtArea.Text);
+                insertar.Parameters.AddWithValue("@fuente", txtFuente.Text);
                 int filas = insertar.ExecuteNonQuery();
                 //conexionBD.Close();
-                if (filas > 0)
+                if(filas > 0 )
                 {
-                    MessageBox.Show("Se inserto correctamente el Area");
+                    MessageBox.Show("Se inserto correctamente la Fuente");
                 }
-
+                
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 MessageBox.Show(ex.ToString());
             }
         }
 
-        private void CargarArea()
+        private void CargarFuente()
         {
-
+            
             try
             {
-                int Area1 = int.Parse(area);
+                int Fuente = int.Parse(fuente);
                 string ls_sql = "";
                 DataRow dr = null;
-                ls_sql = @"select *from Area where id_area = '" + Area1 + "'";
+                ls_sql = @"select *from Fuente where idFuente = '"+ Fuente +"'";
 
                 SqlCommand llenar = new SqlCommand(ls_sql, conexionBD);
                 //conexionBD.Open();
                 SqlDataReader leer = llenar.ExecuteReader();
-                if (leer.Read() == true)
+                if(leer.Read() == true)
                 {
-                    txtArea.Text = leer["descripcion"].ToString();
+                    txtFuente.Text = leer["Fuente"].ToString();
                 }
                 leer.Close();
                 //conexionBD.Close();
@@ -98,26 +96,31 @@ namespace ProyectoPlaneacion
                 //MessageBox.Show("Error al Cargar la Fuente: " + ex.ToString());
             }
         }
-        private void btnOk_Click(object sender, EventArgs e)
+
+        private void btnAceptar_Click(object sender, EventArgs e)
         {
-            if (txtArea.Text != "")
+            if(txtFuente.Text != "")
             {
-                if (area != "")
+                if(fuente != "")
                 {
                     Actualizar();
-                    txtArea.Text = "";
+                    txtFuente.Text = "";
                 }
                 else
                 {
                     Insertar();
-                    txtArea.Text = "";
+                    txtFuente.Text = "";
                 }
             }
             else
             {
-                MessageBox.Show("El area esta Vacia");
+                MessageBox.Show("La fuente esta Vacia");
             }
-           
+        }
+
+        private void frmFuenteMas_Load(object sender, EventArgs e)
+        {
+            CargarFuente();
         }
     }
 }
