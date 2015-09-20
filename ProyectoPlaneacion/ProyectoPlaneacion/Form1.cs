@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace ProyectoPlaneacion
 {
@@ -18,10 +19,17 @@ namespace ProyectoPlaneacion
         int contadorFuncionario = 0;
         int contadorAreas = 0;
 
+        private SqlConnection conexionBD;
 
-        public Form1()
+        public Form1(SqlConnection conexionBD)
         {
             InitializeComponent();
+            this.conexionBD = conexionBD;
+        }
+
+        public Form1() 
+        { 
+        
         }
 
          private bool Conectar()
@@ -46,7 +54,7 @@ namespace ProyectoPlaneacion
 
         private void ContadorAreas()
         {
-            string area = cmbArea.SelectedItem.ToString();
+            string area = "TEST";
             if (area == "Administracion" || area == "Ventas")
             {
                 contadorAreas += 3;

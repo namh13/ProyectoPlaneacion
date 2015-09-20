@@ -68,11 +68,23 @@
     <Compile Include="frmBeneficios.Designer.cs">
       <DependentUpon>frmBeneficios.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDetalleProyecto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDetalleProyecto.Designer.cs">
+      <DependentUpon>frmDetalleProyecto.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmFuente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmFuente.Designer.cs">
       <DependentUpon>frmFuente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Fuente.cs">
       <SubType>Form</SubType>
@@ -87,6 +99,12 @@
     </Compile>
     <Compile Include="Materiales.Designer.cs">
       <DependentUpon>Materiales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipal.Designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Portafolio.cs">
       <SubType>Form</SubType>
@@ -108,14 +126,23 @@
     <EmbeddedResource Include="frmBeneficios.resx">
       <DependentUpon>frmBeneficios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDetalleProyecto.resx">
+      <DependentUpon>frmDetalleProyecto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmFuente.resx">
       <DependentUpon>frmFuente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Fuente.resx">
       <DependentUpon>Fuente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Materiales.resx">
       <DependentUpon>Materiales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Portafolio.resx">
       <DependentUpon>Portafolio.cs</DependentUpon>
