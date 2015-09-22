@@ -75,7 +75,6 @@ namespace ProyectoPlaneacion
 
         private void CargarArea()
         {
-
             try
             {
                 int Area1 = int.Parse(area);
@@ -88,7 +87,7 @@ namespace ProyectoPlaneacion
                 SqlDataReader leer = llenar.ExecuteReader();
                 if (leer.Read() == true)
                 {
-                    txtArea.Text = leer["descripcion"].ToString();
+                    txtArea.Text = leer["descripcionA"].ToString();
                 }
                 leer.Close();
                 //conexionBD.Close();

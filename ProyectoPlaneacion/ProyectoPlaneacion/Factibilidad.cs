@@ -7,47 +7,67 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace ProyectoPlaneacion
 {
     public partial class Factibilidad : Form
     {
-        public Factibilidad()
+        private SqlConnection conexionBD;
+
+        public Factibilidad(SqlConnection conexionBD)
         {
             InitializeComponent();
+            this.conexionBD = conexionBD;
         }
 
         private void Factibilidad_Load(object sender, EventArgs e)
         {
-
+            CargarProyecto();
         }
 
         private void CargarProyecto()
         {
-            string ls = "";
-            DataRow dt = null;
-
-            ls = @"select
-                        f.id_proyecto
-                       ,p.denominacion
-                       ,a.descripcion
-                       ,p.duracion
-                       ,r.Recurso
-                       ,b.Beneficio
-                       from Factible f
-                       join Proyecto p
-                       on f.id_proyecto = p.id_proyecto
-                       join Area a
-                       on p.id_area  = a.id_area
-                       join Recurso r
-                       on p.id_proyecto = r.id_proyecto
-                       join Beneficio b
-                       on p.id_proyecto = b.id_proyecto";
-
-            if (auxiliar.c.SQLSelectRow(ls, ref dt))
+            try
             {
-               //// lblProyecto.Text = dt[""].ToString();
-                //txtPoblacion.Text = dr["poblacion"].ToString();
+                DataTable dt = new DataTable();
+                string ls = "";
+
+                ls = @"select f.idProyecto, p.denominacion, a.descripcionA, 
+                    p.area_afectada, p.descripcion, p.duracion 
+                    from Factible f 
+                    join Proyecto p
+                    on f.idProyecto = p.id_proyecto
+                    join Area a
+                    on p.id_area = a.id_area
+                    where f.Factible = 0
+                    order by f.Orden DESC";
+
+                SqlCommand leer = new SqlCommand(ls, conexionBD);
+                SqlDataAdapter llenar = new SqlDataAdapter(leer);
+                llenar.Fill(dt);
+
+                dataGridProyectos.DataSource = dt;
+            }
+           
+            catch(Exception ex)
+            {
+
+            }
+        }
+
+        private void dataGridProyectos_DoubleClick(object sender, EventArgs e)
+        {
+            string proyecto = "";
+
+            if (dataGridProyectos.RowCount > 0)
+            {
+                proyecto = dataGridProyectos.CurrentRow.Cells["n_id"].Value.ToString();
+
+                frmFactible frm = new frmFactible(conexionBD);
+                frm.proyecto = proyecto;
+                frm.ShowDialog(this);
+                CargarProyecto();
             }
         }
     }

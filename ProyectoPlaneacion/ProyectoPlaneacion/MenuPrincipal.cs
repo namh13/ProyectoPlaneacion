@@ -68,5 +68,19 @@ namespace ProyectoPlaneacion
             area.Show(); 
         }
 
+        private void verProyectoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmProyectos frm = new frmProyectos(conexionBD);
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void factiblesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Factibilidad frm = new Factibilidad(conexionBD);
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
     }
 }

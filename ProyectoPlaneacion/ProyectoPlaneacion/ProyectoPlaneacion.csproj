@@ -92,6 +92,12 @@
     <Compile Include="frmDetalleProyecto.Designer.cs">
       <DependentUpon>frmDetalleProyecto.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmFactible.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFactible.Designer.cs">
+      <DependentUpon>frmFactible.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmFuente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +115,12 @@
     </Compile>
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProyectos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProyectos.Designer.cs">
+      <DependentUpon>frmProyectos.cs</DependentUpon>
     </Compile>
     <Compile Include="Fuente.cs">
       <SubType>Form</SubType>
@@ -171,6 +183,9 @@
     <EmbeddedResource Include="frmDetalleProyecto.resx">
       <DependentUpon>frmDetalleProyecto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmFactible.resx">
+      <DependentUpon>frmFactible.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmFuente.resx">
       <DependentUpon>frmFuente.cs</DependentUpon>
     </EmbeddedResource>
@@ -179,6 +194,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProyectos.resx">
+      <DependentUpon>frmProyectos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Fuente.resx">
       <DependentUpon>Fuente.cs</DependentUpon>

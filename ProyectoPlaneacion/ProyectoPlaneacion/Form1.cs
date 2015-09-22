@@ -89,7 +89,7 @@ namespace ProyectoPlaneacion
             {
                 cmbArea.DataSource = dt;
                 cmbArea.ValueMember = "id_area";
-                cmbArea.DisplayMember = "descripcion";
+                cmbArea.DisplayMember = "descripcionA";
             }
         }
         private void button1_Click(object sender, EventArgs e)

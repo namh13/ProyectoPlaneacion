@@ -85,5 +85,10 @@ namespace ProyectoPlaneacion
                 CargarArea();
             }
         }
+
+        private void frmArea_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

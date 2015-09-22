@@ -36,6 +36,8 @@
             this.detalleProyectosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fuenteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.areaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verProyectoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.factiblesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,7 +72,8 @@
             // 
             this.proyectosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.crearProyectoToolStripMenuItem,
-            this.detalleProyectosToolStripMenuItem});
+            this.detalleProyectosToolStripMenuItem,
+            this.verProyectoToolStripMenuItem});
             this.proyectosToolStripMenuItem.Name = "proyectosToolStripMenuItem";
             this.proyectosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.proyectosToolStripMenuItem.Text = "Proyectos";
@@ -106,6 +109,22 @@
             this.areaToolStripMenuItem.Text = "Area";
             this.areaToolStripMenuItem.Click += new System.EventHandler(this.areaToolStripMenuItem_Click);
             // 
+            // verProyectoToolStripMenuItem
+            // 
+            this.verProyectoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.factiblesToolStripMenuItem});
+            this.verProyectoToolStripMenuItem.Name = "verProyectoToolStripMenuItem";
+            this.verProyectoToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.verProyectoToolStripMenuItem.Text = "Ver Proyecto";
+            this.verProyectoToolStripMenuItem.Click += new System.EventHandler(this.verProyectoToolStripMenuItem_Click);
+            // 
+            // factiblesToolStripMenuItem
+            // 
+            this.factiblesToolStripMenuItem.Name = "factiblesToolStripMenuItem";
+            this.factiblesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.factiblesToolStripMenuItem.Text = "Factibles";
+            this.factiblesToolStripMenuItem.Click += new System.EventHandler(this.factiblesToolStripMenuItem_Click);
+            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -135,5 +154,7 @@
         private System.Windows.Forms.ToolStripMenuItem detalleProyectosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fuenteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem areaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem verProyectoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem factiblesToolStripMenuItem;
     }
 }
