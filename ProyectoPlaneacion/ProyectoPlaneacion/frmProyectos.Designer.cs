@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.dataGridProyectos = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
             this.n_idproyecto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.s_denominacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.n_idarea = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.s_area_afectada = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.s_descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.n_duracion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridProyectos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,15 +53,6 @@
             this.dataGridProyectos.Name = "dataGridProyectos";
             this.dataGridProyectos.Size = new System.Drawing.Size(848, 273);
             this.dataGridProyectos.TabIndex = 0;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(737, 317);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 39);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // n_idproyecto
             // 
@@ -101,6 +92,17 @@
             this.n_duracion.DataPropertyName = "duracion";
             this.n_duracion.HeaderText = "Duracion";
             this.n_duracion.Name = "n_duracion";
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(637, 317);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(193, 39);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Verificar Factibilidad";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // frmProyectos
             // 

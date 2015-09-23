@@ -42,9 +42,10 @@
             this.lbl3 = new System.Windows.Forms.Label();
             this.lbl2 = new System.Windows.Forms.Label();
             this.lbl1 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
+            this.lbl8 = new System.Windows.Forms.Label();
+            this.lbl7 = new System.Windows.Forms.Label();
+            this.lbl6 = new System.Windows.Forms.Label();
+            this.lbl10 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -187,44 +188,55 @@
             this.lbl1.TabIndex = 9;
             this.lbl1.Text = "Proyecto";
             // 
-            // label15
+            // lbl8
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(228, 391);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(144, 13);
-            this.label15.TabIndex = 16;
-            this.label15.Text = "Factibilidad Operacional";
+            this.lbl8.AutoSize = true;
+            this.lbl8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl8.Location = new System.Drawing.Point(228, 391);
+            this.lbl8.Name = "lbl8";
+            this.lbl8.Size = new System.Drawing.Size(144, 13);
+            this.lbl8.TabIndex = 16;
+            this.lbl8.Text = "Factibilidad Operacional";
             // 
-            // label16
+            // lbl7
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(228, 329);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(122, 13);
-            this.label16.TabIndex = 15;
-            this.label16.Text = "Factibilidad Tecnica";
+            this.lbl7.AutoSize = true;
+            this.lbl7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl7.Location = new System.Drawing.Point(228, 329);
+            this.lbl7.Name = "lbl7";
+            this.lbl7.Size = new System.Drawing.Size(122, 13);
+            this.lbl7.TabIndex = 15;
+            this.lbl7.Text = "Factibilidad Tecnica";
             // 
-            // label17
+            // lbl6
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(228, 265);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(138, 13);
-            this.label17.TabIndex = 14;
-            this.label17.Text = "Factibilidad Economica";
+            this.lbl6.AutoSize = true;
+            this.lbl6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl6.Location = new System.Drawing.Point(228, 265);
+            this.lbl6.Name = "lbl6";
+            this.lbl6.Size = new System.Drawing.Size(138, 13);
+            this.lbl6.TabIndex = 14;
+            this.lbl6.Text = "Factibilidad Economica";
+            // 
+            // lbl10
+            // 
+            this.lbl10.AutoSize = true;
+            this.lbl10.Location = new System.Drawing.Point(24, 190);
+            this.lbl10.Name = "lbl10";
+            this.lbl10.Size = new System.Drawing.Size(10, 13);
+            this.lbl10.TabIndex = 17;
+            this.lbl10.Text = ".";
+            this.lbl10.Visible = false;
             // 
             // frmFactible
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(696, 446);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.label17);
+            this.ClientSize = new System.Drawing.Size(880, 443);
+            this.Controls.Add(this.lbl10);
+            this.Controls.Add(this.lbl8);
+            this.Controls.Add(this.lbl7);
+            this.Controls.Add(this.lbl6);
             this.Controls.Add(this.lbl5);
             this.Controls.Add(this.lbl4);
             this.Controls.Add(this.lbl3);
@@ -266,8 +278,9 @@
         private System.Windows.Forms.Label lbl3;
         private System.Windows.Forms.Label lbl2;
         private System.Windows.Forms.Label lbl1;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label lbl8;
+        private System.Windows.Forms.Label lbl7;
+        private System.Windows.Forms.Label lbl6;
+        private System.Windows.Forms.Label lbl10;
     }
 }

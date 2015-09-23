@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.Sql;
 using System.Data.SqlClient;
 
 namespace ProyectoPlaneacion
@@ -40,6 +41,19 @@ namespace ProyectoPlaneacion
             leer.Fill(dt);
 
             dataGridProyectos.DataSource = dt;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string ls = "[dbo].[factibilidad]";
+            SqlCommand verificar = new SqlCommand(ls, conexionBD);
+            verificar.CommandType = CommandType.StoredProcedure;
+            int i = verificar.ExecuteNonQuery();
+
+            if(i>0)
+            { MessageBox.Show("Otro rollo");}
+            else
+            { MessageBox.Show("Nada"); }
         }
     }
 }

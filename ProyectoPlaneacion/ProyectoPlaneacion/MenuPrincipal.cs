@@ -82,5 +82,12 @@ namespace ProyectoPlaneacion
             frm.Show();
         }
 
+        private void noFactiblesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmNoFactible frm = new frmNoFactible(conexionBD);
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
     }
 }

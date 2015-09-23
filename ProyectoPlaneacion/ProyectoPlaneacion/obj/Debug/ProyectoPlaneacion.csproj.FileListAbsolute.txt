@@ -67,3 +67,4 @@ C:\Users\usuario1\Downloads\ProyectoPlaneacion-otra\ProyectoPlaneacion-otra\Proy
 C:\Users\usuario1\Downloads\ProyectoPlaneacion-otra\ProyectoPlaneacion-otra\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.csproj.GenerateResource.Cache
 C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.frmProyectos.resources
 C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.frmFactible.resources
+C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.frmNoFactible.resources

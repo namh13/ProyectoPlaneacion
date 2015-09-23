@@ -38,6 +38,7 @@
             this.areaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verProyectoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.factiblesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.noFactiblesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -112,7 +113,8 @@
             // verProyectoToolStripMenuItem
             // 
             this.verProyectoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.factiblesToolStripMenuItem});
+            this.factiblesToolStripMenuItem,
+            this.noFactiblesToolStripMenuItem});
             this.verProyectoToolStripMenuItem.Name = "verProyectoToolStripMenuItem";
             this.verProyectoToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.verProyectoToolStripMenuItem.Text = "Ver Proyecto";
@@ -124,6 +126,13 @@
             this.factiblesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.factiblesToolStripMenuItem.Text = "Factibles";
             this.factiblesToolStripMenuItem.Click += new System.EventHandler(this.factiblesToolStripMenuItem_Click);
+            // 
+            // noFactiblesToolStripMenuItem
+            // 
+            this.noFactiblesToolStripMenuItem.Name = "noFactiblesToolStripMenuItem";
+            this.noFactiblesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.noFactiblesToolStripMenuItem.Text = "No Factibles";
+            this.noFactiblesToolStripMenuItem.Click += new System.EventHandler(this.noFactiblesToolStripMenuItem_Click);
             // 
             // MenuPrincipal
             // 
@@ -156,5 +165,6 @@
         private System.Windows.Forms.ToolStripMenuItem areaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem verProyectoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem factiblesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem noFactiblesToolStripMenuItem;
     }
 }

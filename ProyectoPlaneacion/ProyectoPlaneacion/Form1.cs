@@ -46,31 +46,51 @@ namespace ProyectoPlaneacion
             LlenarArea();
         }
 
-
+        private void limpiar()
+        {
+            txtDenominacion.Text = "";
+            cmbArea.SelectedIndex = 0;
+            txtArea.Text = "";
+            txtDescripcion.Text = "";
+            dateInicio.Value = DateTime.Now;
+            dateFinal.Value = DateTime.Now;
+        }
         private void CrearProyecto()
         {
-            string sql = "";
-
-            int duracion = 0;
-            int dias = (dateFinal.Value - dateInicio.Value).Days;
-            if (dias > 30)
-            {duracion = dias / 30;}
-            else
-            {duracion = dias;}
-
-            sql = @"insert into Proyecto(denominacion,id_area,area_afectada,descripcion,fecha_inicio,fecha_final,duracion) 
-                    values('{0}',{1},'{2}','{3}','{4}','{5}',{6})";
-            sql = string.Format(sql, txtDenominacion.Text, cmbArea.SelectedIndex + 1, txtArea.Text, txtDescripcion.Text, dateInicio.Value.ToString("yyyy-MM-dd"), dateFinal.Value.ToString("yyyy-MM-dd"),duracion);
-
-            if (auxiliar.c.SqlExec(sql))
+            try
             {
-                MessageBox.Show("Proyecto insertado correctamente");
-                //Limpiar();
+                string sql = "";
+
+                int duracion = 0;
+                int dias = (dateFinal.Value - dateInicio.Value).Days;
+                if (dias > 30)
+                { duracion = dias / 30; }
+                else
+                { duracion = dias; }
+
+                sql = @"insert into Proyecto(denominacion,id_area,area_afectada,descripcion,fecha_inicio,fecha_final,duracion) 
+                    values(@denominacion,@id_area,@area_afectada,@descripcion,@fecha_inicio,@fecha_final,@duracion)";
+                SqlCommand insertar = new SqlCommand(sql, conexionBD);
+                insertar.Parameters.AddWithValue("@denominacion", txtDenominacion.Text);
+                insertar.Parameters.AddWithValue("@id_area", cmbArea.SelectedIndex + 1);
+                insertar.Parameters.AddWithValue("@area_afectada", txtArea.Text);
+                insertar.Parameters.AddWithValue("@descripcion", txtDescripcion.Text);
+                insertar.Parameters.AddWithValue("@fecha_inicio", dateInicio.Value.ToString("yyyy/mm/dd"));
+                insertar.Parameters.AddWithValue("@fecha_final", dateFinal.Value.ToString("yyyy/mm/dd"));
+                insertar.Parameters.AddWithValue("@duracion", duracion);
+                int fila = insertar.ExecuteNonQuery();
+
+                if (fila > 0)
+                {
+                    MessageBox.Show("Se Creo Correctamente el Proyecto");
+                    limpiar();
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Error al ingresar Proyecto:" + auxiliar.c.SQLError());
+                MessageBox.Show(ex.ToString());
             }
+           
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
@@ -81,22 +101,28 @@ namespace ProyectoPlaneacion
         private void LlenarArea()
         {
             string ls = "";
-            DataTable dt = null;
+            DataTable dt = new DataTable();
 
             ls = @"select *from Area";
+            SqlCommand llenar = new SqlCommand(ls, conexionBD);
+            SqlDataAdapter leer = new SqlDataAdapter(llenar);
+            leer.Fill(dt);
 
-            if (auxiliar.c.SQLSelectDataTable(ls, ref dt))
-            {
-                cmbArea.DataSource = dt;
-                cmbArea.ValueMember = "id_area";
-                cmbArea.DisplayMember = "descripcionA";
-            }
+            cmbArea.DataSource = dt;
+            cmbArea.ValueMember = "id_area";
+            cmbArea.DisplayMember = "descripcionA";
         }
         private void button1_Click(object sender, EventArgs e)
         {
             Area frm = new Area(conexionBD);
             frm.ShowDialog(this);
             LlenarArea();
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            limpiar();
+            //this.Close();
         }
 
     }

@@ -11,17 +11,17 @@ using System.Data.SqlClient;
 
 namespace ProyectoPlaneacion
 {
-    public partial class Factibilidad : Form
+    public partial class frmNoFactible : Form
     {
         private SqlConnection conexionBD;
 
-        public Factibilidad(SqlConnection conexionBD)
+        public frmNoFactible(SqlConnection conexionBD)
         {
             InitializeComponent();
             this.conexionBD = conexionBD;
         }
 
-        private void Factibilidad_Load(object sender, EventArgs e)
+        private void frmNoFactible_Load(object sender, EventArgs e)
         {
             CargarProyecto();
         }
@@ -40,7 +40,7 @@ namespace ProyectoPlaneacion
                     on f.idProyecto = p.id_proyecto
                     join Area a
                     on p.id_area = a.id_area
-                    where f.Factible = 1
+                    where f.Factible = 0
                     order by f.Orden DESC";
 
                 SqlCommand leer = new SqlCommand(ls, conexionBD);
@@ -49,8 +49,8 @@ namespace ProyectoPlaneacion
 
                 dataGridProyectos.DataSource = dt;
             }
-           
-            catch(Exception ex)
+
+            catch (Exception ex)
             {
 
             }
