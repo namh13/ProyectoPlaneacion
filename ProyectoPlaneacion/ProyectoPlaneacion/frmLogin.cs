@@ -30,7 +30,7 @@ namespace ProyectoPlaneacion
         {
             if (conexionBD != null)
                 conexionBD.Close();
-
+                
             string connStr =
                 String.Format("server={0};user id={2}; password={3}; " +
                 "database=planeacion; pooling=false;",

@@ -34,8 +34,9 @@
             this.proyectosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.crearProyectoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.detalleProyectosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fuenteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.areaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.beneficiosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.recursosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.costosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,26 +86,34 @@
             // detalleProyectosToolStripMenuItem
             // 
             this.detalleProyectosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fuenteToolStripMenuItem,
-            this.areaToolStripMenuItem});
+            this.beneficiosToolStripMenuItem,
+            this.recursosToolStripMenuItem,
+            this.costosToolStripMenuItem});
             this.detalleProyectosToolStripMenuItem.Name = "detalleProyectosToolStripMenuItem";
             this.detalleProyectosToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.detalleProyectosToolStripMenuItem.Text = "Detalle Proyectos";
             this.detalleProyectosToolStripMenuItem.Click += new System.EventHandler(this.detalleProyectosToolStripMenuItem_Click);
             // 
-            // fuenteToolStripMenuItem
+            // beneficiosToolStripMenuItem
             // 
-            this.fuenteToolStripMenuItem.Name = "fuenteToolStripMenuItem";
-            this.fuenteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.fuenteToolStripMenuItem.Text = "Fuente";
-            this.fuenteToolStripMenuItem.Click += new System.EventHandler(this.fuenteToolStripMenuItem_Click);
+            this.beneficiosToolStripMenuItem.Name = "beneficiosToolStripMenuItem";
+            this.beneficiosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.beneficiosToolStripMenuItem.Text = "Beneficios";
+            this.beneficiosToolStripMenuItem.Click += new System.EventHandler(this.beneficiosToolStripMenuItem_Click);
             // 
-            // areaToolStripMenuItem
+            // recursosToolStripMenuItem
             // 
-            this.areaToolStripMenuItem.Name = "areaToolStripMenuItem";
-            this.areaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.areaToolStripMenuItem.Text = "Area";
-            this.areaToolStripMenuItem.Click += new System.EventHandler(this.areaToolStripMenuItem_Click);
+            this.recursosToolStripMenuItem.Name = "recursosToolStripMenuItem";
+            this.recursosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.recursosToolStripMenuItem.Text = "Recursos";
+            this.recursosToolStripMenuItem.Click += new System.EventHandler(this.recursosToolStripMenuItem_Click);
+            // 
+            // costosToolStripMenuItem
+            // 
+            this.costosToolStripMenuItem.Name = "costosToolStripMenuItem";
+            this.costosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.costosToolStripMenuItem.Text = "Costos";
+            this.costosToolStripMenuItem.Click += new System.EventHandler(this.costosToolStripMenuItem_Click);
             // 
             // MenuPrincipal
             // 
@@ -133,7 +142,8 @@
         private System.Windows.Forms.ToolStripMenuItem proyectosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem crearProyectoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem detalleProyectosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem fuenteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem areaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem beneficiosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem recursosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem costosToolStripMenuItem;
     }
 }

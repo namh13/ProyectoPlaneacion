@@ -39,9 +39,7 @@ namespace ProyectoPlaneacion
 
         private void detalleProyectosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmDetalleProyecto frmDetalle = new frmDetalleProyecto(conexionBD);
-            frmDetalle.MdiParent = this;
-            frmDetalle.Show();
+
         }
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
@@ -54,19 +52,28 @@ namespace ProyectoPlaneacion
 
         }
 
-        private void fuenteToolStripMenuItem_Click(object sender, EventArgs e)
+        private void beneficiosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmFuente fuente = new frmFuente(conexionBD);
-            fuente.MdiParent = this;
-            fuente.Show();
+            frmDetalleBeneficio frmDetalle = new frmDetalleBeneficio(conexionBD);
+            frmDetalle.MdiParent = this;
+            frmDetalle.Show();
         }
 
-        private void areaToolStripMenuItem_Click(object sender, EventArgs e)
+        private void costosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmArea area = new frmArea(conexionBD);
-            area.MdiParent = this;
-            area.Show(); 
+            frmDetalleCostos frmDetalle = new frmDetalleCostos(conexionBD);
+            frmDetalle.MdiParent = this;
+            frmDetalle.Show();
         }
+
+        private void recursosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDetalleRecursos frmDetalle = new frmDetalleRecursos(conexionBD);
+            frmDetalle.MdiParent = this;
+            frmDetalle.Show();
+        }
+
+        
 
     }
 }

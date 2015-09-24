@@ -40,3 +40,6 @@ C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion
 C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.MenuPrincipal.resources
 C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.frmFuenteMas.resources
 C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.frmArea.resources
+C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.frmDetalleBeneficio.resources
+C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.frmDetalleCostos.resources
+C:\Planeacion\ProyectoPlaneacion\ProyectoPlaneacion\obj\Debug\ProyectoPlaneacion.frmDetalleRecursos.resources

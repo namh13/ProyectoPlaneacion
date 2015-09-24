@@ -42,7 +42,7 @@ namespace ProyectoPlaneacion
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Conectar();
+            //Conectar();
             LlenarArea();
         }
 

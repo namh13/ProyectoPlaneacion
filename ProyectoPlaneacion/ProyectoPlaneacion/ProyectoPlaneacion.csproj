@@ -86,6 +86,24 @@
     <Compile Include="frmBeneficios.Designer.cs">
       <DependentUpon>frmBeneficios.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDetalleBeneficio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDetalleBeneficio.Designer.cs">
+      <DependentUpon>frmDetalleBeneficio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDetalleCostos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDetalleCostos.Designer.cs">
+      <DependentUpon>frmDetalleCostos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDetalleRecursos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDetalleRecursos.Designer.cs">
+      <DependentUpon>frmDetalleRecursos.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDetalleProyecto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +136,11 @@
     </Compile>
     <Compile Include="Lib\auxiliar.cs" />
     <Compile Include="Lib\ConexionSQL.cs" />
+    <Compile Include="Login.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Login.resx</DependentUpon>
+    </Compile>
     <Compile Include="Materiales.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +191,15 @@
     <EmbeddedResource Include="frmBeneficios.resx">
       <DependentUpon>frmBeneficios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDetalleBeneficio.resx">
+      <DependentUpon>frmDetalleBeneficio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDetalleCostos.resx">
+      <DependentUpon>frmDetalleCostos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDetalleRecursos.resx">
+      <DependentUpon>frmDetalleRecursos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDetalleProyecto.resx">
       <DependentUpon>frmDetalleProyecto.cs</DependentUpon>
     </EmbeddedResource>
@@ -183,7 +215,10 @@
     <EmbeddedResource Include="Fuente.resx">
       <DependentUpon>Fuente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx" />
+    <EmbeddedResource Include="Login.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Login.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Materiales.resx">
       <DependentUpon>Materiales.cs</DependentUpon>
     </EmbeddedResource>
@@ -249,6 +284,7 @@
     <Content Include="obj\Debug\ProyectoPlaneacion.exe" />
     <Content Include="obj\Debug\ProyectoPlaneacion.pdb" />
     <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
+    <None Include="Resources\banner.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

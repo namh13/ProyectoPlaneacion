@@ -30,10 +30,10 @@
         {
             this.btnEliminar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnAgregar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.n_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.s_descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,6 +60,22 @@
             this.dataGridView1.TabIndex = 7;
             this.dataGridView1.DoubleClick += new System.EventHandler(this.dataGridView1_DoubleClick);
             // 
+            // n_id
+            // 
+            this.n_id.DataPropertyName = "id_area";
+            this.n_id.HeaderText = "Id";
+            this.n_id.Name = "n_id";
+            this.n_id.ReadOnly = true;
+            this.n_id.Width = 50;
+            // 
+            // s_descripcion
+            // 
+            this.s_descripcion.DataPropertyName = "descripcion";
+            this.s_descripcion.HeaderText = "Area";
+            this.s_descripcion.Name = "s_descripcion";
+            this.s_descripcion.ReadOnly = true;
+            this.s_descripcion.Width = 200;
+            // 
             // btnAgregar
             // 
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -81,22 +97,6 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Fuente de Recursos";
             // 
-            // n_id
-            // 
-            this.n_id.DataPropertyName = "id_area";
-            this.n_id.HeaderText = "Id";
-            this.n_id.Name = "n_id";
-            this.n_id.ReadOnly = true;
-            this.n_id.Width = 50;
-            // 
-            // s_descripcion
-            // 
-            this.s_descripcion.DataPropertyName = "descripcion";
-            this.s_descripcion.HeaderText = "Area";
-            this.s_descripcion.Name = "s_descripcion";
-            this.s_descripcion.ReadOnly = true;
-            this.s_descripcion.Width = 200;
-            // 
             // frmArea
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -108,6 +108,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmArea";
             this.Text = "frmArea";
+            this.Load += new System.EventHandler(this.frmArea_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
